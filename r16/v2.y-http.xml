@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="tina"
-           fetch="ssh://github.com/pd2-linux" />
+           fetch="http://github.com/pd2-linux" />
   <default revision="r16-v2.y"
            remote="tina"
            sync-j="1" />
