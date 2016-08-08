@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="tina"
-      fetch="git@github.com:pd2-linux" />
-  <default revision="r16-v2.y"
-           remote="tina"
-           sync-j="1" />
+    <remote  name="tina"
+        fetch="ssh://git@github.com" />
+    <default revision="r16-v2.y"
+        remote="tina"
+        sync-j="1" />
 
-  <project path="build" name="build" groups="tina" >
-    <copyfile src="top_main.mk" dest="Makefile" />
-    <copyfile src="rules.mk" dest="rules.mk" />
-  </project>
-  <project path="config" name="config" groups="tina" >
-    <copyfile src="top_config.in" dest="Config.in" />
-  </project>
-  <project path="dl" name="dl" groups="tina" />
-  <project path="docs" name="docs" groups="tina" />
-  <project path="lichee/brandy" name="brandy" groups="tina" />
-  <project path="lichee/linux-3.4" name="linux-3.4" groups="tina" />
-  <project path="lichee/linux-3.10" name="linux-3.10" groups="tina" />
-  <project path="package" name="package" groups="tina" />
-  <project path="scripts" name="scripts" groups="tina" />
-  <project path="target" name="target" groups="tina" />
-  <project path="toolchain" name="toolchain" groups="tina" />
-  <project path="tools" name="tools" groups="tina" />
+    <project path="build" name="pd2-linux/build" groups="tina" >
+        <copyfile src="top_main.mk" dest="Makefile" />
+        <copyfile src="rules.mk" dest="rules.mk" />
+    </project>
+    <project path="config" name="pd2-linux/config" groups="tina" >
+        <copyfile src="top_config.in" dest="Config.in" />
+    </project>
+    <project path="dl" name="pd2-linux/dl" groups="tina" />
+    <project path="docs" name="pd2-linux/docs" groups="tina" />
+    <project path="lichee/brandy" name="pd2-linux/brandy" groups="tina" />
+    <project path="lichee/linux-3.4" name="pd2-linux/linux-3.4" groups="tina" />
+    <project path="lichee/linux-3.10" name="pd2-linux/linux-3.10" groups="tina" />
+    <project path="package" name="pd2-linux/package" groups="tina" />
+    <project path="scripts" name="pd2-linux/scripts" groups="tina" />
+    <project path="target" name="pd2-linux/target" groups="tina" />
+    <project path="toolchain" name="pd2-linux/toolchain" groups="tina" />
+    <project path="tools" name="pd2-linux/tools" groups="tina" />
 </manifest>
